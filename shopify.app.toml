@@ -3,7 +3,7 @@
 client_id = "e39cf934f1360eac16f03f1c010da976"
 name = "bundle-app"
 handle = "bundle-app-155"
-application_url = "https://christopher-failures-operator-phases.trycloudflare.com"
+application_url = "https://message-na-sanyo-experiencing.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products,write_script_tags"
 
 [auth]
 redirect_urls = [
-  "https://christopher-failures-operator-phases.trycloudflare.com/auth/callback",
-  "https://christopher-failures-operator-phases.trycloudflare.com/auth/shopify/callback",
-  "https://christopher-failures-operator-phases.trycloudflare.com/api/auth/callback"
+  "https://message-na-sanyo-experiencing.trycloudflare.com/auth/callback",
+  "https://message-na-sanyo-experiencing.trycloudflare.com/auth/shopify/callback",
+  "https://message-na-sanyo-experiencing.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

@@ -1,11 +1,8 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./app/**/*.{js,ts,jsx,tsx}",  // Include your Remix app components
-    "./app/routes/**/*.{js,ts,jsx,tsx}",
-    "./app/components/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./app/**/*.{tsx,jsx}"],
   theme: {
     extend: {},
   },
   plugins: [],
-};
+}

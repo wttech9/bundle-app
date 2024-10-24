@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/*-- VARIABLES CSS--*/
+/*Colores*/
+:root{
+/*     --first-color: #E3F8FF; */
+/*     --second-color: #DCFAFB; */
+/*     --third-color: #FFE8DF; */
+    --accent-color: #FF5151;
+/*     --dark-color: #161616; */
+}
+
+/*Tipografia responsive*/
+:root{
+    --body-font: 'Open Sans';
+    --h1-font-size: 1.5rem;
+    --h3-font-size: 1.2rem;
+    --normal-font-size: 0.938rem;
+    --smaller-font-size: 0.75rem;
+}
+@media screen and (min-width: 768px){
+    :root{
+        --h1-font-size: 2rem;
+        --normal-font-size: 1rem;
+        --smaller-font-size: 0.813rem;
+    }
+}
+
+/*-- BASE --*/
+/* *,::after,::before{
+    box-sizing: border-box;
+} */
+.bndlbody{
+    margin: 2rem 0 0 0;
+    /* background-color: #fff; */
+    color: var(--dark-color);
+    font-family: var(--body-font);
+    font-size: 18px;
+}
+/* h1{
+    font-size: var(--h1-font-size);
+} */
+.bndlcard__img img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* a{
+    text-decoration: none;
+} */
+
+/*-- LAYAOUT --*/
+.bd-grid {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  max-width: 1200px;
+  position: relative;
+}
+
+/*-- PAGES --*/
+.title-shop{
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+    position: relative;
+    margin: 0 2.5rem;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0;
+}
+/* .title-shop p{
+    margin: 0 0;
+} */
+.title-shop::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 72px;
+    height: 2px;
+    background-color: var(--dark-color);
+    margin-left: .25rem;
+}
+
+/*-- COMPONENT --*/
+.bndlcard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+}
+article:nth-child(1){
+    background-color: var(--first-color);
+}
+article:nth-child(2){
+    background-color: var(--second-color);
+}
+article:nth-child(3){
+    background-color: var(--third-color);
+}
+article:nth-child(4){
+    background-color: var(--second-color);
+}
+.bndlcard__img{
+    width: 180px;
+    height: auto;
+    padding: 0.5rem 0;
+    transition: .5s;
+}
+.bndlcard__name{
+    position: absolute;
+    left: -25%;
+    top: 0;
+    width: 3.5rem;
+    height: 100%;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    background-color: var(--dark-color);
+    color: #fff;
+    font-weight: bold;
+    transition: .5s;
+}
+.product-title{
+  color: grey;
+  text-align: start;
+}
+.bndlcard__icon{
+    font-size: 1.5rem;
+    color: var(--dark-color);
+}
+.bndlcard__icon:hover{
+    color: var(--accent-color);
+}
+.bndlcard__precis{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    transition: .2s;
+}
+.bndlcard__preci{
+    display: block;
+    text-align: start;
+}
+.bndlcard__preci--before{
+    /* font-size: var(--smaller-font-size); */
+    color: var(--accent-color);
+    margin-bottom: .25rem;
+    text-decoration: line-through;
+}
+.bndlcard__preci--now{
+    /* font-size: var(--h3-font-size); */
+    font-weight: bold;
+}
+
+
+#plus {
+    /* Same size as before */
+ --width: 2rem;
+  padding : 1.1rem;
+  background-color: black;
+  width: var(--width);
+  height: var(--width);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+/*   position: absolute; */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bd-grid article:nth-child(2n) + #plus {
+  left: 100%; /* Align to the right edge of every second bndlcard */
+  margin-left: -0.75rem; /* Adjust for icon width */
+}
+
+#plus::before,
+#plus::after {
+  content: "";
+  height: calc(var(--width) / 2.5);
+  width: calc(var(--width) / 10);
+  background-color: white;
+  position: absolute;
+}
+
+#plus::before {
+  transform: rotate(90deg);
+}
+
+#plus::after {
+  transform: rotate(0deg);
+}
+
+.bndlcard-button {
+  border: none;
+  border-radius:0.5rem;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 25%;
+  font-size: 18px;
+}
+/*Move left*/
+/* .bndlcard:hover{
+    box-shadow: 0 .5rem 1rem #D1D9E6;
+} */
+
+/*-- FOOTER --*/
+
+/* footer{
+  text-align: center;
+} */
+
+/*-- MEDIA QUERIES --*/
+@media screen and (min-width: 1200px){
+    .bndlbody{
+        margin: 3rem 0 0 0;
+    }
+    .title-shop{
+        margin: 0 5rem;
+    }
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
