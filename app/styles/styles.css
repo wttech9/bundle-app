@@ -1,0 +1,21 @@
+
+
+  /* Product styles */
+  .product-item {
+    border-bottom: 1px solid #e1e3e5;
+    padding: 12px 0;
+    padding-left: 12px;
+  }
+  
+  .variant-item {
+    border-bottom: 1px solid #e1e3e5;
+    padding: 4px;
+    padding-left: 40px;
+    padding-right: 20px;
+    
+  }
+.footer-box{
+  box-Shadow: '0 -12px 18px rgba(0, 0, 0, 0.15)';
+  padding: 8px;
+}
+ 

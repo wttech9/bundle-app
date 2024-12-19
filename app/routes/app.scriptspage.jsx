@@ -26,7 +26,7 @@ export const action = async ({ request }) => {
                 input: {
                     cache: false,
                     displayScope: "ONLINE_STORE",
-                    src: "https://cd01-49-205-246-217.ngrok-free.app/alert-script.js"
+                    src: "https://a85e-49-205-246-217.ngrok-free.app/alert-script.js"
                 },
             },
         }

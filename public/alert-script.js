@@ -2,7 +2,7 @@
     // Load custom CSS
     const customCssLink = document.createElement('link');
     customCssLink.rel = 'stylesheet';
-    customCssLink.href = 'https://cd01-49-205-246-217.ngrok-free.app/custom.css';
+    customCssLink.href = 'https://a85e-49-205-246-217.ngrok-free.app/custom.css';
     document.head.appendChild(customCssLink);
 
     // Function to inject bundle product details into the page using div and other HTML tags
