@@ -3,7 +3,7 @@
 client_id = "e39cf934f1360eac16f03f1c010da976"
 name = "bundle-app"
 handle = "bundle-app-155"
-application_url = "https://parks-advisors-sustainable-mart.trycloudflare.com"
+application_url = "https://olympic-shelter-boc-discipline.trycloudflare.com"
 embedded = true
 
 [build]
@@ -13,13 +13,13 @@ include_config_on_deploy = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "read_products,write_products,write_script_tags"
+scopes = "read_products,write_draft_orders,write_products,write_script_tags"
 
 [auth]
 redirect_urls = [
-  "https://parks-advisors-sustainable-mart.trycloudflare.com/auth/callback",
-  "https://parks-advisors-sustainable-mart.trycloudflare.com/auth/shopify/callback",
-  "https://parks-advisors-sustainable-mart.trycloudflare.com/api/auth/callback"
+  "https://olympic-shelter-boc-discipline.trycloudflare.com/auth/callback",
+  "https://olympic-shelter-boc-discipline.trycloudflare.com/auth/shopify/callback",
+  "https://olympic-shelter-boc-discipline.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

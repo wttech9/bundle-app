@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "603f02444f552cdc73f0b3259f5c17d0"
+name = "bundle-app"
+handle = "bundle-app-155"
+application_url = "https://bedroom-tba-anymore-economics.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "teststoreplatform.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,write_draft_orders,write_products,write_script_tags"
+
+[auth]
+redirect_urls = [
+  "https://bedroom-tba-anymore-economics.trycloudflare.com/auth/callback",
+  "https://bedroom-tba-anymore-economics.trycloudflare.com/auth/shopify/callback",
+  "https://bedroom-tba-anymore-economics.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+[pos]
+embedded = false
