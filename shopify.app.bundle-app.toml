@@ -3,7 +3,7 @@
 client_id = "603f02444f552cdc73f0b3259f5c17d0"
 name = "bundle-app"
 handle = "bundle-app-155"
-application_url = "https://bedroom-tba-anymore-economics.trycloudflare.com"
+application_url = "https://jon-ant-scottish-significantly.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "read_products,write_draft_orders,write_products,write_script_tags"
 
 [auth]
 redirect_urls = [
-  "https://bedroom-tba-anymore-economics.trycloudflare.com/auth/callback",
-  "https://bedroom-tba-anymore-economics.trycloudflare.com/auth/shopify/callback",
-  "https://bedroom-tba-anymore-economics.trycloudflare.com/api/auth/callback"
+  "https://jon-ant-scottish-significantly.trycloudflare.com/auth/callback",
+  "https://jon-ant-scottish-significantly.trycloudflare.com/auth/shopify/callback",
+  "https://jon-ant-scottish-significantly.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
